@@ -10,7 +10,7 @@ load_dotenv()
 # Constants
 CLIENT_ID = os.getenv('CLIENT_ID')
 CLIENT_SECRET = os.getenv('CLIENT_SECRET')
-USERNAME = os.getenv('USERNAME')
+GUSERNAME = os.getenv('GUSERNAME')
 PASSWORD = os.getenv('PASSWORD')
 DOWNLOAD_PATH = os.getenv('DOWNLOAD_PATH')
 
@@ -27,7 +27,7 @@ token_data = {
     'grant_type': 'password',
     'client_id': CLIENT_ID,
     'client_secret': CLIENT_SECRET,
-    'username': USERNAME,
+    'username': GUSERNAME,
     'password': PASSWORD
 }
 token_r = requests.post(token_url, json=token_data)
